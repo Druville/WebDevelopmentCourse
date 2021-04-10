@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<!--
+    Name: Dru Woodville  
+    Date Created: 4/10/2021 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>	
+    </head> 
+    
+    <body>
+        <header>
+            <h1>Tom's Terpsichorean Trattoria</h1>
+        </header>
+
+        <nav>
+            <hr />
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+            <hr />
+        </nav>
+
+        <section>
+            
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name"> <br />
+            <label for="email">Email:</label> <br />
+            <input type="text" id="email" name="email"> <br />
+            <label for="phone">Phone:</label> <br />
+            <input type="text" id="phone" name="phone"> <br />
+
+            <label for="contact">Reason for Inquiry:</label> <br />
+            <select id="contact" name="contact">
+                <option value="default" selected>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br />
+
+            <label for="info">Additional Information:</label><br />
+            <textarea id="info" name="info"></textarea><br />
+
+            <fieldset>
+                <legend>Have you been to the restaurant?</legend><br />
+                <input type="radio" id="choice1" name="questionnaire" value ="yes">
+                <label for="choice1">Yes</label>
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Best days to contact you:</legend><br />
+                <input type="checkbox" id="monday" name="day" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="day" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="day" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="day" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="day" value="friday">
+                <label for="friday">F</label>
+            </fieldset>
+            
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        </section>
+
+
+        <footer>
+            <hr />
+            <p>123 Road St., Salem, IN, 47167<br />
+            (812)555-1234</p>
+            <hr />
+        </footer>
+    </body> 
+</html>
