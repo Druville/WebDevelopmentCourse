@@ -2,11 +2,45 @@
 <!--
     Name: Dru Woodville  
     Date Created: 4/10/2021 
-    Most recent revision:
+    Most recent revision: 4/29/2021
 -->
 <html lang="en"> 
     <head> 
-        <title>Contact Us</title>	
+        <title>Contact Us</title>
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            textarea {
+                width: 75%;
+                height: 150px;
+                border: 2px solid #291f1e;
+                resize: none;
+            }
+            input[type=text] {
+                width: 50%;
+                margin: 5px 0px;
+            }
+            fieldset {
+                
+                width: max-content;
+                margin: 5px 0px;
+            }
+            select {
+                width:30%;
+                margin:5px 0px;
+            }
+            input[type=submit] {
+                background-color: #0e402d;
+                color: #f9fcff;
+                padding: 8px; 
+                border: thin solid #0075a2;
+                text-decoration: none;
+                display: block;
+                margin: 20px; 
+                width: 100px;
+                float:left;
+                text-align: center;
+            }
+        </style>	
     </head> 
     
     <body>
@@ -14,25 +48,26 @@
             <h1>Tom's Terpsichorean Trattoria</h1>
         </header>
 
-        <nav>
-            <hr />
+        <nav class="border">
+            <p>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contact.html">Contact Us</a>
-            <hr />
+            </p>
+        <div class="clear-float"></div>
         </nav>
 
         <section>
             
         <form action="submit.html" method="POST">
-            <label for="name">Name:</label> <br />
+            <label for="name"><b>Name:</b></label> <br />
             <input type="text" id="name" name="name"> <br />
-            <label for="email">Email:</label> <br />
+            <label for="email"><b>Email:</b></label> <br />
             <input type="text" id="email" name="email"> <br />
-            <label for="phone">Phone:</label> <br />
+            <label for="phone"><b>Phone:</b></label> <br />
             <input type="text" id="phone" name="phone"> <br />
 
-            <label for="contact">Reason for Inquiry:</label> <br />
+            <label for="contact"><b>Reason for Inquiry:</b></label> <br />
             <select id="contact" name="contact">
                 <option value="default" selected>Catering</option>
                 <option value="privateParty">Private Party</option>
@@ -52,7 +87,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Best days to contact you:</legend><br />
+                <legend><b>Best days to contact you:</b></legend><br />
                 <input type="checkbox" id="monday" name="day" value="monday">
                 <label for="monday">M</label>
                 <input type="checkbox" id="tuesday" name="day" value="tuesday">
@@ -66,15 +101,16 @@
             </fieldset>
             
             <input type="submit" name="submit" value="Submit">
+            <div class="clear-float"></div>
         </form>
         </section>
 
 
         <footer>
-            <hr />
+            
             <p>123 Road St., Salem, IN, 47167<br />
             (812)555-1234</p>
-            <hr />
+            <p>&copy; 2021 Dru Woodville. All Rights Reserved.</p>
         </footer>
     </body> 
 </html>

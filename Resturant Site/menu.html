@@ -2,51 +2,90 @@
 <!--
     Name: Dru Woodville  
     Date Created: 4/10/2021 
-    Most recent revision:
+    Most recent revision: 4/29/2021
 -->
 <html lang="en"> 
     <head> 
         <title>Menu</title>	
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            text-align: center;
+        }
+        h2 {
+        font-size: 1.5em;
+        text-align: center;
+        }   
+        table, th, td {
+            border: 1px solid #291F1E;
+            border-collapse: collapse;
+            height: 40px;
+        }
+        table {
+            width: 66%;
+            margin: 10px;
+        }
+        tr:nth-child(odd) {
+        background-color: #96ab97;
+        }
+        th {
+            background-color: #f9fcff;
+        }
+        
+    </style>
     </head> 
     
     <body>
         <header>
             <h1>Tom's Terpsichorean Trattoria</h1>
         </header>
-        <nav>
-            <hr />
+        <nav class="border">
+            <p>
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="contact.html">Contact Us</a>
-            <hr />
+            </p>
+        <div class="clear-float"></div>
         </nav>
         <section>
+        <article id="menu">
+        <div class="grid-container">
+            <div class="grid-item">
             <p>
-                <b>Burger and Fries</b><br />
+                <h2>Burger and Fries</h2>
                 An american Classic&excl;<br />
                 Your choice - with or without cheese<br />
                 Pickle, onion, tomato, and lettuce<br />
                 Served with our famous thick cut french fries<br /> 
                 &dollar;7.95<br />
             </p>
+            </div>
+            <div class="grid-item">
             <p>
-                <b>Tenderloin Sandich and Chips</b><br />
+                <h2>Tenderloin Sandich and Chips</h2>
                 Really Hits the Spot&excl;<br />
                 Plain or Sesame Seed Bun<br />
                 Pickle, onion, tomato, and lettuce<br />
                 Served with our house made chips<br />
                 &dollar;8.95<br />
             </p>
+            </div>
+            <div class="grid-item">
             <p>
-                <b>Hot Dog and Chips</b><br />
+                <h2>Hot Dog and Chips</h2>
                 A Summer Classic&excl;<br />
                 Your Choice - white or wheat bun<br />
                 Relish, mustard, and ketchup<br />
                 Served with our house-made chips<br />
                 &dollar;7.95<br />
             </p>
+            </div>
+            <div class="grid-item">
             <p>
-                <b>House Salad</b><br />
+                <h2>House Salad</h2>
                 On the lighter Side<br />
                 Your choice - with out without cheese<br />
                 Iceburg lettuce, tomatoes, peppers<br />
@@ -54,15 +93,19 @@
                 Served with dinner roll<br />
                 &dollar;6.95<br />
             </p>
+            </div>
+            <div class="grid-item">
             <p>
-                <b>Italian Sausage and Peppers</b><br />
+                <h2>Italian Sausage and Peppers</h2>
                 An All-Time Favorite&excl;<br />
                 Your Choice - mild or spicy Cole Slaw<br />
                 Served with garlic mashers<br />
                 &dollar;10.95<br />
             </p>
+            </div>
+            <div class="grid-item">
             <p>
-                <b>Brisket Sandwhich and Fries</b> <br />
+                <h2>Brisket Sandwhich and Fries</h2>
                 A Taste of Texas&excl;<br />
                 Smoked brisket<br />
                 Thick-cut Texas Toast<br />
@@ -71,12 +114,41 @@
                 French Fries<br />
                 &dollar;7.95<br />
             </p>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Beverages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Root Beer</td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Bottled Water</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>$1.25</td>
+                </tr>
+            </tbody>
+        </table>    
+        </article>
         </section>      
         <footer>
-            <hr />
+            
             <p>123 Road St., Salem, IN, 47167<br />
             (812)555-1234</p>
-            <hr />
+            <p>&copy; 2021 Dru Woodville. All Rights Reserved.</p>
+            
         </footer>
     </body> 
 </html>
