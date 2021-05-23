@@ -2,47 +2,105 @@
 <!--
     Name: Dru Woodville  
     Date Created: 4/10/2021 
-    Most recent revision: 4/29/2021
+    Most recent revision: 5/18/2021
 -->
 <html lang="en"> 
 <head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home Page</title>	
-    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-<style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
+<style>
+    .carousel-inner {
+        width: 100%;
+        height: 40px;
+        background-color: #291f1e;
+        color: #f9fcff;
+        text-align: center;
+
+    }
 </style>
+
 </head> 
     
-<body>
-<main>    
-    <header>
+<body>  
+    <header >
         <h1>Tom's Terpsichorean Trattoria</h1>
-    </header>
+        <div id="carouselAnnouncements" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h3 alt="First slide">We're opening a new location!</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 alt="Second slide">We're rolling out a seasonal menu, with special options for this season</h3>
+          </div>
+          <div class="carousel-item">
+            <h3 alt="Third slide">The Drink of the Month is SG Special Brew</h3>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselAnnouncements" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselAnnouncements" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+        <div class="clear-float"></div> 
+    </header>   
 
-    <nav class="border">
-        <p>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact Us</a>
-        </p>
-        <div class="clear-float"></div>
-    </nav>
-        
-    <section>
-    <article class="border" id="main">
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+       
+    <div class="row">
+        <div class ="col-lg-12">
         <img src="images/table.jpg" alt="table" style="display: block; width: 400px;height: 150px; margin-top: 20px; margin-left:auto; margin-right:auto; "><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
         <p style="text-align: center;">
             Welcome to Tom's Terpsichorean Trattoria, Created in homage to our friend Tom. He loved to dance and loved good food.<br />
             At Tom's kick back enjoy yourself; have a good time and some good food... here, we are all family.<br />  
             Pull up a chair and grab a plate.<br />
         </p>
-    </article>
-    </section>
-        <footer >
-        <p>123 Road St., Salem, IN, 47167<br />
-        (812)555-1234</p>
-        <p>&copy; 2021 Dru Woodville. All Rights Reserved.</p>   
-        </footer>
-    </main>
+        </div>
+        <div class="grid-item" id="jsMessage">
+            <h3>Page best viewed with javascript enabled</h3>
+        </div>
+        <script>
+            document.getElementById('jsMessage').style.display = 'none'
+        </script>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+            123 Road St., Salem, IN, 47167
+            (812)555-1234<br/>
+            &copy; 2021 Dru Woodville. All Rights Reserved.  
+            </span>
+        </div>    
+    </footer>
+
     </body> 
 </html>

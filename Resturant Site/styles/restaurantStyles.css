@@ -3,50 +3,57 @@ Creator: Dru Woodville
 Date Created: 4/29/21
 Date Last Modified:
 */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background-color: #f9fcff;
     color: #0d1f2d;
     max-width: 1200px;
-    margin: left;
-    padding: 5px 20px;
+    /*margin: left;
+     padding: 5px 20px 20px 20px; */
+    margin-bottom: 100px;
 }
 header, footer {
     background-color: #291f1e;
     color: #f9fcff;
-    height: 100px;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
+    text-align: center; 
+    height: 120px;
+    
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: papyrus;
 }
-nav {
-    border-top: 3px solid #6b8f71 ;
-    border-bottom: 3px solid #6b8f71;
-    margin-top: 4px;
-}
-nav a {
-    background-color: #0e402d;
-    color: #f9fcff;
-    padding: 8px; 
-    border: thin solid #0075a2;
-    text-decoration: none;
-    display: block;
-    margin: 5px 20px 20px 20px; 
-    width: 100px;
-    float:left;
-    text-align: center;
-}
-nav a:visited {
-    color: #f9fcff;
-    background-color: #291f1e;
-}
-nav a:hover {
-    
-    font-weight: bold;
+h3 {
+    font-family:papyrus;
+    font-size: 1.1em;
+
 }
 
 .clear-float {
     clear:both;
 }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    line-height: 30px;
+    padding: 10px;
+    
+    
+}
+.container {
+    width: auto;
+    max-width: 1200px;
+    
+  }
+ 
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  } 
